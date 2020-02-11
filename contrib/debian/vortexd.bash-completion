@@ -1,0 +1,3 @@
+contrib/vortexd.bash-completion	vortexd
+contrib/vortex-cli.bash-completion	vortex-cli
+contrib/vortex-tx.bash-completion	vortex-tx

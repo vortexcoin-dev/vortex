@@ -1,0 +1,11 @@
+usr/local/bin/vortex-qt usr/bin
+share/pixmaps/vortex16.png usr/share/pixmaps
+share/pixmaps/vortex32.png usr/share/pixmaps
+share/pixmaps/vortex128.png usr/share/pixmaps
+share/pixmaps/vortex256.png usr/share/pixmaps
+share/pixmaps/vortex-testnet32.png usr/share/pixmaps
+share/pixmaps/vortex-testnet128.png usr/share/pixmaps
+share/pixmaps/vortex-testnet256.png usr/share/pixmaps
+debian/vortex-qt.desktop usr/share/applications
+debian/vortex-testnet-qt.desktop usr/share/applications
+debian/vortex-qt.protocol usr/share/kde4/services/

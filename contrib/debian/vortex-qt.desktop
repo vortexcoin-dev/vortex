@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Vortex
+Comment=Desktop allet for Vortex Cryptocurrency
+Comment[de]=Offizieller Client für die Kryptowährung Vortex
+Exec=vortex-qt %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/vortex128.png
+MimeType=x-scheme-handler/vortex;
+Categories=Office;Finance;
+StartupWMClass=Vortex-qt
