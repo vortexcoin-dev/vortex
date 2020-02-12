@@ -980,7 +980,7 @@ int64_t GetProofOfWorkReward(unsigned int nHeight) {
     if (nHeight == params.superBlockHeight) {
         return params.superBlockReward;
     } else {
-        unsigned int epoch = (nHeight - 1) / params.nPOWBlockEpoch;
+        int epoch = (nHeight - 1) / params.nPOWBlockEpoch;
         if (epoch >= 0 && epoch < 4) {
             return params.powBlockRewardAtEpoch[epoch];
         } else {

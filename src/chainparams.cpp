@@ -56,7 +56,7 @@ public:
         consensus.nTotalPOWBlock = consensus.nPOWBlockEpoch * 4; //4 epoch
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nStartMiningTime = 1581512400;
+        consensus.nStartMiningTime = 1581519600;
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x00"); // 350000
@@ -76,11 +76,11 @@ public:
         vAlertPubKey = ParseHex("0437cb1297494c4333ce5c8c1a493b2da2cb0d4c2ebe5057bd07e7e7e8f9ce3a55d0c88d1a515e18f6b3d0782d0b0ee651d4b43562b98a782300caf15b19b4acc2");
         nDefaultPort = 9133;
 
-        genesis = CreateGenesisBlock(1580608922, 300001726, 0x1e0fffff, 1, 0);
+        genesis = CreateGenesisBlock(1580608923, 400029892, 0x1e0fffff, 1, 0);
 //        MineGenesisBlock(genesis, consensus.powLimit);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("d94eb9a5b373e71e14bda4ac81bb0680d6d9e7c8aa3de41b4147f09547038076"));
-        assert(genesis.hashMerkleRoot == uint256S("0d9f5fbfdd8c2890b5c12702e66cdfc1ce437d2df2acc548ebf28497044e1826"));
+        assert(consensus.hashGenesisBlock == uint256S("153bc6826b7bfdd1538ef525a0b46c129bce676b7e6e4f4ef393c39cecd075e1"));
+        assert(genesis.hashMerkleRoot == uint256S("e479418b846faadfe9a67a3b43ca0747ab7e91affc14743a44769ba445ec81a9"));
 
         // nodes with support for servicebits filtering should be at the top
         vSeeds.emplace_back("34.70.191.120");
@@ -107,7 +107,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("d94eb9a5b373e71e14bda4ac81bb0680d6d9e7c8aa3de41b4147f09547038076")},
+                {0, uint256S("153bc6826b7bfdd1538ef525a0b46c129bce676b7e6e4f4ef393c39cecd075e1")},
             }
         };
 
@@ -244,7 +244,7 @@ public:
 
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
-        consensus.nStartMiningTime = 1581440400;
+        consensus.nStartMiningTime = 1581513300;
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x00");

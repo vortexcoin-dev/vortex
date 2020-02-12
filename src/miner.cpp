@@ -665,12 +665,12 @@ void static VortexMiner(const CChainParams &chainparams, void *parg) {
                 while (g_connman == nullptr || g_connman->GetNodeCount(CConnman::CONNECTIONS_ALL) < nMiningRequiresPeers)
                     MilliSleep(1000);
             }
-//            if (GetTime() < Params().GetConsensus().nStartMiningTime) {
-//                LogPrintf("It's not time to start minining, please wait more!\n");
-//                while (GetTime() < Params().GetConsensus().nStartMiningTime) {
-//                    MilliSleep(1000);
-//                }
-//            }
+            if (GetTime() < Params().GetConsensus().nStartMiningTime) {
+                LogPrintf("It's not time to start minining, please wait more!\n");
+                while (GetTime() < Params().GetConsensus().nStartMiningTime) {
+                    MilliSleep(1000);
+                }
+            }
 
             MilliSleep(2000);
             //
