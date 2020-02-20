@@ -53,7 +53,9 @@ struct Params {
     CAmount superBlockReward;
     CAmount powBlockRewardAtEpoch[4];
     int nCoinbaseMaturity;  // Coinbase transaction outputs can only be spent after this number of new blocks (network rule)
+    int nDgwPastBlocks;  // number of blocks to average in Dark Gravity Wave
     int nStartMiningTime;
+    int nDGWStartHeight;
 };
 } // namespace Consensus
 

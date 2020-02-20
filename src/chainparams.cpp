@@ -57,6 +57,8 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nStartMiningTime = 1581519600;
+        consensus.nDgwPastBlocks = 30;
+        consensus.nDGWStartHeight = 695;
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x00"); // 350000
@@ -152,6 +154,8 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nStartMiningTime = 1581440400;
+        consensus.nDgwPastBlocks = 30;
+        consensus.nDGWStartHeight = 695;
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x00");
@@ -245,6 +249,8 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nStartMiningTime = 1581513300;
+        consensus.nDgwPastBlocks = 30;
+        consensus.nDGWStartHeight = 695;
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x00");

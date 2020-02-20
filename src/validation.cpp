@@ -2953,7 +2953,7 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, bool fProofOfS
 
     const Consensus::Params& consensusParams = params.GetConsensus();
     //check block time (start)
-    if (block.GetBlockTime() < consensusParams.nStartMiningTime) {
+    if (GetTime() < consensusParams.nStartMiningTime) {
         return state.Invalid(false, REJECT_INVALID, "time-too-new", "it's not good time to start mining");
     }
     // Check proof of work or proof-of-stake
